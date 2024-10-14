@@ -15,8 +15,11 @@
     width: 1680px;
     height: 893px;
 }
-nav {
+.logo-gnb {
     display: flex;
+    width: 1680px;
+    height: 116px;
+    margin: 0 120px 0 120px;
 }
 .logo a {
     display: block;

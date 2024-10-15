@@ -1,3 +1,15 @@
+/* 전체 레이아웃 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* 헤더 */
+#header {
+    background-color: #e0e0e0;
+    padding: 15px 0;
+}
 .visual {
     background-color: var(--main-banner-bg-color);
     width: 100%;
@@ -19,14 +31,142 @@
     display: flex;
     width: 1680px;
     height: 116px;
-    margin: 0 120px 0 120px;
+    margin: 41px 120px 0 120px;
+    align-items: center;
 }
 .logo a {
     display: block;
     width: 5rem;
     height: 5rem;
     background: url(../img/logo.png) no-repeat 0 0 / contain;
+    margin-left: 23px;
 }
 .gnb {
     display: flex;
+    padding: 43px;
+    margin-left: 277px;
+    gap: 99px;
+}
+.gnb li {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* 추천 제품 섹션 */
+.R-pro {
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+}
+
+.sec-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sec-item {
+    display: flex;
+    margin-bottom: 30px;
+    background-color: #1a1a1a;
+}
+
+.sec-item .sec-img {
+    display: block;
+    flex: 1;
+    width: 840px;
+}
+
+.sec-item dl {
+    flex: 1;
+    padding: 20px;
+}
+
+.sec-item dt {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.sec-item dd {
+    margin-bottom: 20px;
+}
+
+.sec-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00ff00;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* 이벤트 섹션 */
+.Event {
+    max-width: 1200px;
+    margin: 40px auto;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+}
+
+.Event h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.Event ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.Event li {
+    flex: 1 1 calc(20% - 20px);
+}
+
+.Event img {
+    width: 100%;
+    height: auto;
+}
+
+/* 스토어 섹션 */
+.Store {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+
+.Store h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    grid-column: 1 / -1;
+}
+
+.Store a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.Store img {
+    width: 100%;
+    height: auto;
+}
+
+/* 푸터 */
+#footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
 }

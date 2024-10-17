@@ -7,7 +7,7 @@ body {
 
 /* 헤더 */
 #header {
-    background-color: #e0e0e0;
+    /* background-color: #e0e0e0; */
     padding: 15px 0;
 }
 .visual {
@@ -32,6 +32,8 @@ body {
     width: 1680px;
     height: 116px;
     margin: 41px 120px 0 120px;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     align-items: center;
 }
 .logo a {
@@ -51,61 +53,96 @@ body {
     font-weight: 500;
     font-size: 20px;
 }
-
+.gnb li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
 /* 추천 제품 섹션 */
 .R-pro {
-    max-width: 1200px;
+    max-width: 1680px;
     margin: 40px auto;
-    background-color: #1a1a1a;
+    /* background-color: #1a1a1a; */
     color: #fff;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .sec-title {
-    font-size: 24px;
+    font-weight: 700;
+    font-size: 40px;
     margin-bottom: 20px;
+    text-align: center;
+    color: #000;
 }
-
+.inner {
+    border: 1px solid #000;
+}
 .sec-item {
     display: flex;
-    margin-bottom: 30px;
-    background-color: #1a1a1a;
+    /* margin-bottom: 30px; */
+    /* background-color: #1a1a1a; */
+    text-align: center;
+    justify-content: space-between;
+    /* border: 1px solid #fff; */
+    color: #000;
+}
+.sec-item figure {
+    width: 840px;
+    height: 487.51px;
 }
 
 .sec-item .sec-img {
     display: block;
-    flex: 1;
+    /* flex: 1; */
     width: 840px;
 }
 
 .sec-item dl {
     flex: 1;
-    padding: 20px;
+    width: 840px;
+    height: 487.51px;
+    padding: 40px;
 }
 
+.sec-item.num1 figure {
+    /* padding: 20px 0 20px 20px; */
+}
+.sec-item.num2 figure {
+    /* padding: 20px 0px 20px 20px; */
+}
 .sec-item dt {
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
     margin-bottom: 10px;
+    margin-top: 60px;
+    line-height: 1;
+}
+.sec-item dt b {
+    font-size: 30px;
+    margin: 0;
+    opacity: 0.8;
 }
 
 .sec-item dd {
+    font-size: 22px;
+    opacity: 0.6;
     margin-bottom: 20px;
 }
 
 .sec-item a {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 30px;
     background-color: #00ff00;
     color: #000;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 50px;
+    font-size: 24px;
 }
 
 /* 이벤트 섹션 */
 .Event {
-    max-width: 1200px;
+    max-width: 1680px;
     margin: 40px auto;
     background-color: #1a1a1a;
     color: #fff;
@@ -113,25 +150,34 @@ body {
 }
 
 .Event h3 {
-    font-size: 24px;
+    font-weight: 700;
+    font-size: 40px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .Event ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
 }
 
 .Event li {
-    flex: 1 1 calc(20% - 20px);
+    flex-basis: calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+}
+
+.Event li:nth-child(n + 4) {
+    flex-basis: calc(50% - 20px);
+    max-width: calc(50% - 20px);
 }
 
 .Event img {
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
-
 /* 스토어 섹션 */
 .Store {
     max-width: 1200px;
@@ -139,13 +185,17 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    background-color: #e0e0e0;
+    /* background-color: #e0e0e0; */
     padding: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .Store h3 {
-    font-size: 24px;
+    font-weight: 700;
+    font-size: 40px;
     margin-bottom: 20px;
+    text-align: center;
     grid-column: 1 / -1;
 }
 
@@ -162,6 +212,48 @@ body {
 .Store img {
     width: 100%;
     height: auto;
+}
+
+.Store a {
+    width: 330px;
+    height: 420.21px;
+    text-decoration: none;
+    text-align: left;
+}
+.Store a b {
+    display: flex;
+    font-weight: 600;
+    font-size: 25px;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+.Store .white b::after {
+    content: "";
+    display: block;
+    background: url(../img/ico-arrow.png) no-repeat 0 0 / contain;
+    width: 30px;
+    height: 30px;
+}
+.Store .black b::after {
+    content: "";
+    display: block;
+    background: url(../img/ico-arrow-white.png) no-repeat 0 0 / contain;
+    width: 30px;
+    height: 30px;
+}
+.Store .black {
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+}
+.Store .white {
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+}
+.Store a img {
+    transform: translateY(20%);
 }
 
 /* 푸터 */

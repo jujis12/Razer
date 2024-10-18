@@ -1,9 +1,4 @@
 /* 전체 레이아웃 */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-}
 
 /* 헤더 */
 #header {
@@ -126,7 +121,7 @@ body {
 .sec-item dd {
     font-size: 22px;
     opacity: 0.6;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .sec-item a {
@@ -157,22 +152,20 @@ body {
 }
 
 .Event ul {
+    gap: 20px;
+}
+.Event .sec1 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: 20px;
+}
+.Event .sec2 {
+    display: flex;
     gap: 20px;
 }
 
 .Event li {
-    flex-basis: calc(33.33% - 20px);
-    max-width: calc(33.33% - 20px);
+    height: 332px;
 }
-
-.Event li:nth-child(n + 4) {
-    flex-basis: calc(50% - 20px);
-    max-width: calc(50% - 20px);
-}
-
 .Event img {
     width: 100%;
     height: auto;
@@ -251,6 +244,7 @@ body {
     background-color: #fff;
     color: #000;
     font-weight: 600;
+    border: 1px solid #000;
 }
 .Store a img {
     transform: translateY(20%);
@@ -260,5 +254,44 @@ body {
 #footer {
     background-color: #000;
     color: #fff;
+    position: relative;
     padding: 40px 0;
+}
+#footer .footer-sec {
+    display: flex;
+    justify-content: space-between;
+    width: 786px;
+    height: 286px;
+    margin-left: 149px;
+}
+#footer h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#footer p {
+    font-size: 14px;
+}
+
+#footer .sns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+
+#footer .sns li {
+    list-style: none;
+}
+
+#footer .sns a {
+    display: block;
+}
+
+#footer .sns img {
+    width: 30px;
+    height: 30px;
 }

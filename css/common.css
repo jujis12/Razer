@@ -28,7 +28,106 @@ hr,
     color: transparent;
     display: none;
 }
+
+.logo-gnb {
+    display: flex;
+    justify-content: center;
+    width: 1680px;
+    height: 116px;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+.logo a {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    background: url(../img/logo.png) no-repeat 0 0 / contain;
+    margin-left: 23px;
+}
+.gnb {
+    display: flex;
+    padding: 43px;
+    margin-left: 277px;
+    gap: 99px;
+}
+.gnb li {
+    font-weight: 500;
+    font-size: 20px;
+}
+.gnb li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+}
 #header {
     position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    /* background: #ff5; */
     display: flex;
+}
+/* 푸터 */
+#footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+}
+#footer .footer-sec {
+    display: flex;
+    justify-content: space-between;
+    width: 786px;
+    height: 286px;
+    margin-left: 189px;
+}
+#footer h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#footer .footer-sec p {
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+#footer .sns {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#footer figure {
+    display: block;
+    width: 112px;
+    height: 112px;
+    margin-right: 50px;
+    position: absolute;
+    right: 130px;
+    top: 30px;
+}
+
+#footer .f-line {
+    width: 80%;
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    gap: 20px;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+#footer .ddd {
+    display: flex;
+}
+#footer .f-line a {
+    text-decoration: none;
+    color: #fff;
+    gap: 15px;
+}
+
+.copyright {
+    color: #fff;
 }
